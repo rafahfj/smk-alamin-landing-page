@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 1);
-  padding-top: 80px;
 }
 
 .overlay {
@@ -23,9 +22,13 @@ body {
   height: 100%;
   display: block;
   align-items: center;
-  padding: 0 50px;
+  padding: 50px;
   box-sizing: border-box;
   margin: auto;
+  color: whitesmoke;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 .hero img {
@@ -33,13 +36,9 @@ body {
   margin: 50px 0;
 }
 
-.hero .overlay h1,
-.hero .overlay h2,
-.hero .overlay p {
-  color: whitesmoke;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+.overlay h1,
+.overlay h2,
+.overlay p {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
@@ -71,7 +70,7 @@ body {
   justify-content: space-between;
   position: relative;
   right: 40px;
-  top: 15px;
+  top: 8px;
 }
 
 .menu-toggle input {
@@ -101,12 +100,14 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  font-family: "Rubik", sans-serif;
   padding: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all linear 0.5s;
 }
 
 .nav-fixed img {
-  width: 80px;
+  width: 50px;
   margin: 0 10px;
 }
 
@@ -127,9 +128,10 @@ body {
   width: 60%;
   height: 100%;
   padding: 20px 0;
+  font-family: "Rubik", sans-serif;
   flex-direction: column;
   background-color: #fff;
-  transition: all ease-in-out 1s;
+  transition: all ease-in-out 0.7s;
   opacity: 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -162,7 +164,7 @@ body {
   display: block;
   font-size: 2em;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 .side-nav ul .t-close.slide {
   right: 20px;
@@ -172,9 +174,33 @@ body {
   margin: 30px;
 }
 
+/* Global Section */
+
+.sect {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
 /* RESPONSIVE */
 
-@media screen and (min-width: 578px) {
+@media screen and (max-width: 375px) {
+  .schl-name {
+    font-size: 2em;
+  }
+  .hero img {
+    width: 60%;
+    margin: 30px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero img {
+    width: 40%;
+    margin: 40px 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 495px) {
   .hero {
     background-size: 100% auto;
   }
