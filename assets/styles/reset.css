@@ -80,6 +80,7 @@ output,
 ruby,
 section,
 summary,
+svg,
 time,
 mark,
 audio,
@@ -100,6 +101,13 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -117,7 +125,6 @@ section {
 }
 body {
   line-height: 1;
-  height: 5000px;
 }
 ol,
 ul {
@@ -127,6 +134,10 @@ blockquote,
 q {
   quotes: none;
 }
+svg {
+  display: block;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,

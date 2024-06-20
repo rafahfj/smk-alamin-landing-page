@@ -179,6 +179,39 @@ body {
 .sect {
   font-family: "Inter", sans-serif;
   text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+.sect-2,
+.sect-4 {
+  background-color: #ffe45c;
+  /* color: #fff; */
+}
+
+.sect h2 {
+  margin: 15px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.sect p {
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+
+.sect a {
+  text-decoration: underline;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.sect img {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 20px;
 }
 
 /* RESPONSIVE */
@@ -191,11 +224,14 @@ body {
     width: 60%;
     margin: 30px 0 10px 0;
   }
+  .sect {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .hero img {
-    width: 40%;
+    width: 50%;
     margin: 40px 0 20px 0;
   }
 }

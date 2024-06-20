@@ -13,6 +13,8 @@ document.addEventListener("click", function (obj) {
       document.querySelector(".t-close").classList.remove("slide");
     } else if (document.querySelector(".nav-fixed ul").style.top == "-80px") {
       document.querySelector(".nav-fixed ul").style.top = "0";
+    } else {
+      document.querySelector(".nav-fixed ul").style.top = "-80px";
     }
   }
 });
