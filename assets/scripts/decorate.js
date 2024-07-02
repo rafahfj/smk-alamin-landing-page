@@ -3,7 +3,7 @@ function addSeparate() {
   svgTop.forEach((e) => {
     e.innerHTML = `<defs>
                      <linearGradient id="t-grad" x1="50%" y1="100%" x2="50%" y2="0%" >
-                           <stop offset="0%" style="stop-color: #ffe45c;stop-opacity:1.00" />
+                           <stop offset="0%" style="stop-color:#ffee98;stop-opacity:1.00" />
                            <stop offset="98%" style="stop-color:rgb(255,255,255);stop-opacity:1.00" />
                      </linearGradient>
                   </defs>
@@ -14,7 +14,7 @@ function addSeparate() {
     e.innerHTML = `<defs>
                      <linearGradient id="b-grad" x1="50%" y1="100%" x2="50%" y2="0%" >
                            <stop offset="2%" style="stop-color:rgb(255,255,255);stop-opacity:1.00" />
-                           <stop offset="100%" style="stop-color:#ffe45c;stop-opacity:1.00" />
+                           <stop offset="100%" style="stop-color:#ffee98;stop-opacity:1.00" />
                      </linearGradient>
                   </defs>
                   <rect x="0" y="0" width="100%" height="100%" fill="url(#b-grad)"/>`;
