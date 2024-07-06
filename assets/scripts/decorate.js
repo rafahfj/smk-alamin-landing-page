@@ -38,6 +38,31 @@ function showCards(m) {
 </div>`;
 }
 
+window.onresize = () => {
+  const parentNav = document.querySelector(".parentNav");
+  if (window.innerWidth >= 910) {
+    if (parentNav.firstElementChild.classList?.contains("menu-toggle")) {
+      document.querySelector(".menu-toggle").remove();
+      parentNav.innerHTML = `<ul id="nav-right" class="nav-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="sejarah.html">Sejarah</a></li>
+                                <li><a href="jurusan.html">Jurusan</a></li>
+                                <li><a href="ekskul.html">Ekskul</a></li>
+                                <li><a href="pengajar.html">Pengajar</a></li>
+                                <li><a href="galeri.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                              </ul>`;
+    }
+  } else if (window.innerWidth <= 909) {
+    parentNav.innerHTML = `<div class="menu-toggle" onclick="menuToggle()">
+                              <input type="checkbox" id="menu-toggle" />
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>`;
+  }
+};
+
 // function addFaq() {
 //   fetch("../database/faq.json")
 //     .then((response) => {

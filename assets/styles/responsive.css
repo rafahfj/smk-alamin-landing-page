@@ -80,9 +80,6 @@
 }
 
 @media screen and (min-width: 700px) {
-  .hero {
-    background-size: 100% auto;
-  }
   .cont-gallery {
     display: flex;
     justify-content: center;
@@ -106,6 +103,12 @@
     flex-direction: column;
     text-align: end;
     align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .hero {
+    background-size: 100% auto;
   }
 }
 

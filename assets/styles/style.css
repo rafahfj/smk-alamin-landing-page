@@ -97,7 +97,7 @@ header {
 
 /* Navigasi Atas */
 
-.nav-fixed ul {
+.nav-fixed > ul {
   position: fixed;
   width: 100%;
   background-color: #fff;
@@ -107,6 +107,33 @@ header {
   padding: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: all linear 0.5s;
+}
+
+.nav-fixed ul .nav-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.nav-fixed ul .nav-right li {
+  color: black;
+  margin: 0;
+  display: block;
+  width: 60px;
+  padding: 7px;
+  border-radius: 7px;
+  transition: 0.3s;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.nav-fixed ul .nav-right li:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-fixed ul .nav-right li:active {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .nav-fixed img {
@@ -206,8 +233,15 @@ header {
   margin-bottom: 20px;
 }
 
+.sect-1 p,
+.sect-2 p,
+.sect-3 p,
+.sect-4 p {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
 .sect a {
-  text-decoration: underline;
   font-size: 0.95em;
   font-weight: 500;
 }
@@ -221,6 +255,19 @@ header {
   margin: 10px 0 30px 0;
   border-radius: 20px;
 }
+
+.sect a {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s;
+}
+.sect a:active {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  background-color: #f8f8f8;
+}
+
 /* Card */
 .cont-gallery {
   display: grid;
@@ -404,3 +451,5 @@ footer {
 .cr a {
   text-decoration: underline;
 }
+
+/* Nav Atas Wide Screen */

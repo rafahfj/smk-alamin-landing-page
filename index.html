@@ -27,8 +27,8 @@
           <img src="assets/images/logo-yhma.png" alt="" />
           <p>SMK AL AMIN</p>
         </li>
-        <li>
-          <div class="menu-toggle">
+        <li class="parentNav">
+          <div class="menu-toggle" onclick="menuToggle()">
             <input type="checkbox" id="menu-toggle" />
             <span></span>
             <span></span>
@@ -39,19 +39,19 @@
     </div>
     <div class="side-nav">
       <ul id="side-nav" class="">
-        <p class="t-close" id="t-close">x</p>
+        <p class="t-close" id="t-close" onclick="tClose()">x</p>
         <h3>SMK AL AMIN</h3>
-        <li><a href="">Home</a></li>
-        <li><a href="">Sejarah</a></li>
-        <li><a href="">Jurusan</a></li>
-        <li><a href="">Ekskul</a></li>
-        <li><a href="">Pengajar</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <li><a href="ekskul.html">Ekskul</a></li>
+        <li><a href="pengajar.html">Pengajar</a></li>
+        <li><a href="galeri.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <!-- <li><a href="">PPDB</a></li> -->
       </ul>
     </div>
-    <div class="container">
+    <div class="container" onclick="sNavClose()">
       <header>
         <div class="hero">
           <div class="overlay">
@@ -73,7 +73,7 @@
         </div>
       </header>
       <main>
-        <section class="sect sect-1">
+        <section class="sect sect-1" id="sect-1">
           <img src="Photos/upacara1.webp" alt="" />
           <h2>INTRODUCTION</h2>
           <p>
@@ -94,7 +94,7 @@
           width="100%"
           height="100px"
         ></svg>
-        <section class="sect sect-2">
+        <section class="sect sect-2" id="sect-2">
           <img src="Photos/siswa-otkp.webp" alt="" />
           <h2>PROGRAM KEAHLIAN</h2>
           <p>
@@ -120,7 +120,7 @@
           width="100%"
           height="100px"
         ></svg>
-        <section class="sect sect-3">
+        <section class="sect sect-3" id="sect-3">
           <img src="Photos/paskibra3.webp" alt="" />
           <h2>EKSTRAKULIKULER</h2>
           <p>
@@ -142,7 +142,7 @@
           width="100%"
           height="100px"
         ></svg>
-        <section class="sect sect-4">
+        <section class="sect sect-4" id="sect-4">
           <img src="Photos/lab-kompter.jpg" alt="" />
           <h2>FASILITAS</h2>
           <p>
@@ -285,34 +285,51 @@
           </p>
           <ul>
             <li>
-              <a href=""><img src="logo/instagram.png" /></a>
+              <a
+                href="https://www.instagram.com/smkalamincibening98?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                ><img src="logo/instagram.png"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="logo/facebook.png" /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100090175191401&mibextid=ZbWKwL"
+                target="_blank"
+                ><img src="logo/facebook.png"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="logo/youtube.png" /></a>
+              <a
+                href="https://youtube.com/@smkalamincibeningchannel1032?si=otlpqFhhwGddGfCR"
+                target="_blank"
+                ><img src="logo/youtube.png"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="logo/pin.png" /></a>
+              <a href="https://maps.app.goo.gl/nG1vXzZxeZZ5r2jQ9"
+                ><img src="logo/pin.png"
+              /></a>
             </li>
             <li></li>
           </ul>
         </section>
         <section class="foot foot-2">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sejarah</a></li>
-            <li><a href="">Jurusan</a></li>
-            <li><a href="">Ekskul</a></li>
-            <li><a href="">Pengajar</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="jurusan.html">Jurusan</a></li>
+            <li><a href="ekskul.html">Ekskul</a></li>
+            <li><a href="pengajar.html">Pengajar</a></li>
+            <li><a href="galeri.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </section>
       </footer>
       <div class="cr">
-        <p>Copyright © 2024 | <a href="">Rafah Fajri Juwaeni</a></p>
+        <p>
+          Copyright © 2024 |
+          <a href="../rafahfajrijuwaeni/">Rafah Fajri Juwaeni</a>
+        </p>
       </div>
     </div>
 
