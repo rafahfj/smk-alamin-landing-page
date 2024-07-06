@@ -90,9 +90,20 @@ video {
   border: 0;
   vertical-align: baseline;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a {
   color: black;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -100,13 +111,7 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: inherit;
+  outline: none !important;
 }
 
 /* HTML5 display-role reset for older browsers */
