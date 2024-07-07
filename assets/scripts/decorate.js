@@ -22,25 +22,9 @@ function addSeparate() {
 }
 addSeparate();
 
-function showCards(m) {
-  return `<div class="col-md-4 my-5">
-  <div class="card">
-    <img src="${m.Poster}" class="card-img-top" alt="" />
-    <div class="card-body">
-      <h5 class="card-title">${m.Title}</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">
-        ${m.Year}
-      </h6>
-      <a href="#" class="btn btn-primary modal-detail-button" data-bs-toggle="modal"
-      data-bs-target="#movieDetailModal" data-imdbid="${m.imdbID}">Show Details</a>
-    </div>
-  </div>
-</div>`;
-}
-
-window.onresize = () => {
+function sizingRes() {
   const parentNav = document.querySelector(".parentNav");
-  if (window.innerWidth >= 910) {
+  if (window.innerWidth >= 820) {
     if (parentNav.firstElementChild.classList?.contains("menu-toggle")) {
       document.querySelector(".menu-toggle").remove();
       parentNav.innerHTML = `<ul id="nav-right" class="nav-right">
@@ -53,7 +37,7 @@ window.onresize = () => {
                                 <li><a href="contact.html">Contact</a></li>
                               </ul>`;
     }
-  } else if (window.innerWidth <= 909) {
+  } else if (window.innerWidth <= 819) {
     parentNav.innerHTML = `<div class="menu-toggle" onclick="menuToggle()">
                               <input type="checkbox" id="menu-toggle" />
                               <span></span>
@@ -61,8 +45,12 @@ window.onresize = () => {
                               <span></span>
                             </div>`;
   }
-};
+}
 
+sizingRes();
+window.onresize = () => {
+  return sizingRes();
+};
 // function addFaq() {
 //   fetch("../database/faq.json")
 //     .then((response) => {
