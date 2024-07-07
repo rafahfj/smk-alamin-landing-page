@@ -320,7 +320,7 @@ div.cont-gallery img {
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-  transition: height 0.2s ease;
+  transition: all 0.3s ease;
   padding: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -337,23 +337,25 @@ div.cont-gallery img {
   cursor: pointer;
 }
 .faq.faq--expanded {
-  height: 180px;
-  animation: expand 0.5s ease;
+  height: auto;
+  /* animation: expand 0.5s ease; */
 }
 
 .d-answer {
   opacity: 0;
 }
-.answer {
+.faq .answer {
   background-color: rgb(231, 231, 231);
   padding: 5px;
   border-radius: 5px;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 .faq--unexpanded > .d-answer,
 .faq--expanded > .d-answer {
   width: 100%;
-  height: 70px;
+  height: auto;
+  margin-top: 20px;
 }
 .faq--unexpanded > .d-answer {
   opacity: 0;
@@ -389,7 +391,7 @@ div.cont-gallery img {
     height: 78px;
   }
   100% {
-    height: 180px;
+    height: auto;
   }
 }
 @keyframes unexpand {
