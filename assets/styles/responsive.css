@@ -67,6 +67,9 @@
     width: 45%;
     margin: 130px 0 40px 0;
   }
+  .faq.faq--expanded {
+    height: 160px;
+  }
 }
 
 @media screen and (min-width: 680px) {
@@ -104,6 +107,15 @@
     text-align: end;
     align-content: space-between;
   }
+  .faq.faq--expanded {
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 797px) {
+  .faq.faq--expanded {
+    height: 190px;
+  }
 }
 
 @media screen and (min-width: 810px) {
@@ -112,8 +124,22 @@
   }
 }
 
+@media screen and (min-width: 900px) {
+  .faq.faq--expanded {
+    height: 160px;
+  }
+}
+
 @media screen and (min-width: 1028px) {
   .hero img {
     width: 278px;
+  }
+  .faq.faq--expanded {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1028px) {
+  .faq.faq--expanded {
+    height: 190px;
   }
 }
